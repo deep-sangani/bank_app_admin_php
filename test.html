@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  </head>
+<body>
+
+<p><b>Start typing a name in the input field below:</b></p>
+
+<p>Suggestions: <span id="txtHint"></span></p>
+
+<form>
+First name: <input type="text" onkeyup="showHint(this.value)">
+</form>
+
+<script>
+function showHint() {
+  var str = "deep"
+  axios.post('test.php', {
+  firstName: 'Finn',
+  lastName: 'Williams'
+})
+.then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.log(error);
+});
+}
+</script>
+
+</body>
+</html>
