@@ -15,9 +15,14 @@
                 padding-left:20px;
                 margin-bottom: 50px;
                 margin-top: 5rem;
-                min-height: 83vh;
+                min-height: 80vh;
+                width: 90%;
 
 
+            }
+            .table-width{
+              width: fit-content;
+              margin: 10px auto;
             }
         </style>
     </head>
@@ -32,7 +37,7 @@
             <?php include "./common/leftDeshboard.php"?>
             <div class="home-right w-4/5 ">
 <div class="flex flex-col">
-  <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+  <div class="-my-2 table-width overflow-x-auto sm:-mx-6 lg:-mx-8">
     <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
       <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
         <table class="min-w-full divide-y divide-gray-200">

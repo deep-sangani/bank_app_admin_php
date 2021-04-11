@@ -2,9 +2,8 @@
 session_start();
 if(!isset($_SESSION["user"])){
   header('Location:/resources/views/login.php');
-}else{
- print_r($_SESSION["user"]);
 }
+
 
  ?>
 
