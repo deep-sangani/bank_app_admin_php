@@ -1,3 +1,13 @@
+<?php 
+session_start();
+if(!isset($_SESSION["user"])){
+  header('Location:/resources/views/login.php');
+}else{
+ print_r($_SESSION["user"]);
+}
+
+ ?>
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -34,6 +44,7 @@
     </h3>
     <p class="mt-1 max-w-2xl text-sm leading-5 text-gray-500">
       Personal details and application.
+   
     </p>
   </div>
   <div>
@@ -43,7 +54,7 @@
           Full name
         </dt>
         <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-            deep sangani
+           <?php echo $_SESSION["user"]->name; ?>
         </dd>
       </div>
       <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -51,7 +62,7 @@
             Employee Designation
         </dt>
         <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-          super admin
+         <?php echo $_SESSION["user"]->designation; ?>
         </dd>
       </div>
       <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -59,7 +70,7 @@
           Email address
         </dt>
         <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-          deep@dpfs.com
+           <?php echo $_SESSION["user"]->email; ?>
         </dd>
       </div>
       <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -67,7 +78,7 @@
           Employee Id
         </dt>
         <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-         deep123
+         <?php echo $_SESSION["user"]->empid; ?>
         </dd>
       </div>
      

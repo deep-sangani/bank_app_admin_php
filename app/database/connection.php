@@ -3,14 +3,19 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "bank";
-
+$dsn = 'mysql:host='.$servername.';dbname='.$dbname;
 // Create connection
-$conn = new mysqli($servername, $username, $password,$dbname);
+try{
 
+  $conn = new PDO($dsn,$username,$password);
 // Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+$conn->setAttribute(PDO::FETCH_OBJ,PDO::ERRMODE_EXCEPTION,PDO::FETCH_ASSOC);
+echo "cdatabase connected";
+}catch(PDOException $e){
+  echo $e;
 }
+
+
 
 
 ?>

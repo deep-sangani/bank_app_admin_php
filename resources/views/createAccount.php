@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,6 +23,7 @@
     <?php include "./common/nevbar.php"?>
         <div class="main flex ">
         <?php include "./common/leftDeshboard.php"?>
+       
             <!-- <%@include file="leftDeshboard.jsp" %> -->
             <div class="home-right w-full ">
                 <form action="../createAcc" method="POST" id="form" enctype='multipart/form-data' >
@@ -35,6 +35,7 @@
                                         <h3 class="text-lg font-medium leading-6 text-gray-900">Personal Information</h3>
                                         <p class="mt-1 text-sm leading-5 text-gray-600">
                                             Information of Account Holder
+                                             
                                         </p>
                                     </div>
                                 </div>

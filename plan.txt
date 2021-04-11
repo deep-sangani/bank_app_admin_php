@@ -1,9 +1,15 @@
 bank management app for admin(for bank employes)
--login page
--deshboard (see all info of employ like name,empid,designation) for loged info
--create bank acc
-- withdraw balance
-- deposite balance
-- see and update user info
-- tranasction page
+[+] login page
+
+[+] deshboard (see all info of employ like name,empid,designation) for loged info
+
+[+] create bank acc
+
+[+]  withdraw balance
+
+[+]  deposite balance
+
+[+] see and update user info
+
+[+] tranasction page
 
