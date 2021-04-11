@@ -30,7 +30,7 @@ I used following technologies :-
 ![ ](img4.png)
 
 ---
-## withdrow page
+## withdraw page
 
 ![ ](img5.png)
 
