@@ -1,10 +1,6 @@
-<?php 
-if($_COOKIE["loggedin"]==1){
-    header('Location:/resources/views/deshBoard.php');
-}
 
 
-?>
+
 
 <!DOCTYPE html>
 <html>

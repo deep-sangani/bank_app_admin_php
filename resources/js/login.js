@@ -6,8 +6,7 @@ var submitform = document.getElementById("submitform")
 //     // var formdata = new FormData(e.target)
 //     // formdata.forEach((value, key) => {
 //     //     data[key] = value
-//     // })
-
+//     // }
 
 //     // .then((res) => {
 //     //     console.log(res.data)

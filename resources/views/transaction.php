@@ -1,4 +1,11 @@
+<?php 
+session_start();
+if(!isset($_SESSION["user"])){
+  header('Location:/resources/views/login.php');
+}
 
+
+ ?>
 
 <!DOCTYPE html>
 

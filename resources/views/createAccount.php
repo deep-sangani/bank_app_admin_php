@@ -1,4 +1,12 @@
 
+<?php 
+session_start();
+if(!isset($_SESSION["user"])){
+  header('Location:/resources/views/login.php');
+}
+
+
+ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,19 +22,28 @@
                 margin-bottom: 50px;
                 margin-top: 5rem;
 
-
             }
         </style>
     </head>
     <body>
 
     <?php include "./common/nevbar.php"?>
+    <?php 
+            if(isset($_GET["msg"])){
+                include "./model.php";
+                
+
+            }
+    
+    
+    ?>
         <div class="main flex ">
         <?php include "./common/leftDeshboard.php"?>
+    
        
             <!-- <%@include file="leftDeshboard.jsp" %> -->
             <div class="home-right w-full ">
-                <form action="../createAcc" method="POST" id="form" enctype='multipart/form-data' >
+                <form action="../../app/controller/createAccController.php" method="POST" id="form" enctype='multipart/form-data' >
                     <div class="sm:w-9/12 sm:ml-4 sm:mr-4 ">
                         <div class="mt-10 sm:mt-0">
                             <div class="md:grid md:grid-cols-3 md:gap-6">
@@ -43,7 +60,7 @@
 
                                     <div class="shadow overflow-hidden sm:rounded-md">
                                         <div class="px-4 py-5 bg-white sm:p-6">
-<!--              here stsrt                              -->
+<!--              here start                              -->
                                             
                         <div class="shadow overflow-hidden sm:rounded-md">
                                             <div class="px-4 py-5 bg-white sm:p-6">

@@ -10,44 +10,44 @@ I used following technologies :-
 ---
 ## login page
 
-![ ](img1.png)
+![ ](github_img/img1.png)
 
 ---------
 
 ## dashboard page
 
-![ ](img2.png)
+![ ](github_img/img2.png)
 
 -------
 ## create account page
 
-![ ](img3.png)
+![ ](github_img/img3.png)
 
 ---
 
 ## deposit balance page
 
-![ ](img4.png)
+![ ](github_img/img4.png)
 
 ---
 ## withdraw page
 
-![ ](img5.png)
+![ ](github_img/img5.png)
 
 ---
 ## userinfo page
 
-![ ](img6.png)
+![ ](github_img/img6.png)
 
 ---
 ## delete account page
 
-![ ](img7.png)
+![ ](github_img/img7.png)
 
 ---
 ## transaction page
 
-![ ](img8.png)
+![ ](github_img/img8.png)
 
 ---
 > if anyone get error please kindly report it in issue section.

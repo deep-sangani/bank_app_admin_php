@@ -1,3 +1,11 @@
+<?php 
+session_start();
+if(!isset($_SESSION["user"])){
+  header('Location:/resources/views/login.php');
+}
+
+
+ ?>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
