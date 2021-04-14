@@ -10,10 +10,13 @@ $checkacc = new Checkacc();
 $result = $checkacc->verifiedAcc($cus_first_name, $cus_last_name, $acc_no);
 if (isset($result)) {
     if ($featurename == "deposit") {
-        header('Location:/resources/views/depositBal.php?userexist=true');
+        header("Location:/resources/views/depositBal.php?userexist=true&acc_no={$result}");
     }
     if ($featurename == "withdraw") {
-        header('Location:/resources/views/withdrawBal.php?userexist=true');
+        header("Location:/resources/views/withdrawBal.php?userexist=true&acc_no={$result}");
+    }
+    if ($featurename == "deposit") {
+        header("Location:/resources/views/depositBal.php?userexist=true&acc_no={$result}");
     }
 } else {
 
@@ -22,5 +25,8 @@ if (isset($result)) {
     }
     if ($featurename == "withdraw") {
         header('Location:/resources/views/withdrawBal.php?userexist=false');
+    }
+    if ($featurename == "deposit") {
+        header('Location:/resources/views/depositBal.php?userexist=false');
     }
 }

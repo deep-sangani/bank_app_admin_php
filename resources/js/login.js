@@ -26,7 +26,7 @@ function inputValidate (form) {
     var empid = form.empid.value;
     var pass = form.pass.value;
     var err = []
-    var empidrgx = '/^[a-z]$/';
+    var empidrgx = '/^[a-z][$/';
     if (empid == "" || empid.length < 3) {
         err.push("please enter valid empid....")
     }

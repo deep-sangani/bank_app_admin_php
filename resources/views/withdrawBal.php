@@ -98,7 +98,7 @@ if (!isset($_SESSION["user"])) {
 
 
                                         <?php if ($_GET["userexist"] == "true") { ?>
-                                            <form action="../withdrawAmt" method="POST">
+                                            <form action="../../app/controller/withdrawBal.php" method="POST">
                                                 <div class="grid grid-cols-6 gap-6 px-4 pt-12">
 
                                                     <div class="col-span-6 sm:col-span-3">
