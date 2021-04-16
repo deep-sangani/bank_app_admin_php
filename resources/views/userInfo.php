@@ -90,6 +90,14 @@ if (!isset($_SESSION["user"])) {
 
 <body>
     <?php include "./common/nevbar.php" ?>
+
+    <?php
+    if (isset($_GET["msg"])) {
+        include "./model.php";
+    }
+
+
+    ?>
     <div class="main flex ">
         <?php include "./common/leftDeshboard.php" ?>
         <div class="home-right w-full ">
@@ -153,7 +161,7 @@ if (!isset($_SESSION["user"])) {
                                         <br />
 
                                         <?php if (isset($_GET["first_name"])) { ?>
-                                            <form action="../updateUserInfo" method="POST" id="userinfo">
+                                            <form action="../../app/controller/updateUserInfoController.php" method="POST" id="userinfo">
                                                 <div class="grid grid-cols-6 gap-6 px-4 pt-12">
 
                                                     <div class="col-span-6 sm:col-span-6 flex justify-between items-center  mr-1">

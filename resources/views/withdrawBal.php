@@ -99,6 +99,7 @@ if (!isset($_SESSION["user"])) {
 
                                         <?php if ($_GET["userexist"] == "true") { ?>
                                             <form action="../../app/controller/withdrawBal.php" method="POST">
+                                                <input hidden class="" name="acc_no" value="<?php echo $_GET["acc_no"] ?>">
                                                 <div class="grid grid-cols-6 gap-6 px-4 pt-12">
 
                                                     <div class="col-span-6 sm:col-span-3">
@@ -107,7 +108,7 @@ if (!isset($_SESSION["user"])) {
                                                     </div>
                                                     <div class="col-span-6 sm:col-span-3">
                                                         <label for="aadhar_card" class="block text-sm font-medium leading-5 text-gray-700">Enter Particulars</label>
-                                                        <input id="aadhar_card" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5" name="Particulars" required>
+                                                        <input id="aadhar_card" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5" name="particulars" required>
                                                     </div>
 
                                                     <div class="col-span-6 flex items-center justify-center">

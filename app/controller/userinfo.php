@@ -32,7 +32,7 @@ try {
 
         header("Location:/resources/views/userInfo.php?first_name={$first_name}&last_name={$last_name}&email_address={$email_address}&street_address={$street_address}&city={$city}&state={$state}&account_type={$account_type}&pan_card={$pan_card}&mobile_no={$mobile_no}&aadhar_card={$aadhar_card}&postal_code={$postal_code}&acc_no={$acc_no}&balance={$balance}&photo_url={$photo_url}");
     } else {
-        header('Location:/resources/views/userinfo.php?userexist=false');
+        header('Location:/resources/views/userInfo.php?userexist=false');
     }
 } catch (PDOException $e) {
     echo $e;

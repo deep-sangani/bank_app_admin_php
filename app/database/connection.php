@@ -14,7 +14,7 @@ class Dbconn
 
       $conn = new PDO($dsn, $username, $password);
       // Check connection
-      $conn->setAttribute(PDO::FETCH_OBJ, PDO::ERRMODE_EXCEPTION, PDO::FETCH_ASSOC);
+      $conn->setAttribute(PDO::FETCH_OBJ, PDO::ERRMODE_EXCEPTION,);
       // echo "database connected";
 
     } catch (PDOException $e) {

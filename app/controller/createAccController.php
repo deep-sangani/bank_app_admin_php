@@ -28,6 +28,7 @@ if (isset($_POST)) {
     $location = "../../uploads/" . "$acc_no";
 
     // make sql query and save data to database
+
     try {
         $dbconn = new Dbconn();
         $getconn = $dbconn->getconnection();
