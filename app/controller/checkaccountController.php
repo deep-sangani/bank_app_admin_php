@@ -8,7 +8,9 @@ $featurename = $_POST["featurename"];
 
 $checkacc = new Checkacc();
 $result = $checkacc->verifiedAcc($cus_first_name, $cus_last_name, $acc_no);
+
 if (isset($result)) {
+    print_r($result);
     if ($featurename == "deposit") {
         header("Location:/resources/views/depositBal.php?userexist=true&acc_no={$result}");
     }
@@ -17,6 +19,9 @@ if (isset($result)) {
     }
     if ($featurename == "deposit") {
         header("Location:/resources/views/depositBal.php?userexist=true&acc_no={$result}");
+    }
+    if ($featurename == "deleteacc") {
+        header("Location:/resources/views/deleteAcc.php?userexist=true&acc_no={$result}");
     }
 } else {
 
@@ -28,5 +33,8 @@ if (isset($result)) {
     }
     if ($featurename == "deposit") {
         header('Location:/resources/views/depositBal.php?userexist=false');
+    }
+    if ($featurename == "deleteacc") {
+        header("Location:/resources/views/deleteAcc.php?userexist=false");
     }
 }

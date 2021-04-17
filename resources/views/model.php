@@ -41,7 +41,9 @@
 
             <div class="flex overflow-hidden ml-8 ">
 
-              <img class="inline-block h-32 w-32 rounded-md text-white shadow-solid" src="<?php echo $_GET["acc_img_url"]; ?>" />
+              <?php if ($_GET["acc_img_url"]) { ?>
+                <img class="inline-block h-32 w-32 rounded-md text-white shadow-solid" src="<?php echo $_GET["acc_img_url"]; ?>" />
+              <?php } ?>
 
 
             </div>
